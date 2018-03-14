@@ -62,7 +62,7 @@ public class QuickSortTester {
 
         System.out.println("\n\nTrials for Testing Runtimes:");
 
-        for (int g=1;g<11;g++) {
+        for (int g=11;g>0;g--) {
 
 
 
@@ -94,7 +94,7 @@ public class QuickSortTester {
 
             atime=total/10;
 
-            System.out.println("Average Time for Trials, size " + arrMatey2.length + ": " + atime + " nanoseconds");
+            System.out.println("Average Time for Trials, size " + arrMatey2.length + ": " + atime + " nanosecond" );
 
         }
 
