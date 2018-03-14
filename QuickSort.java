@@ -113,7 +113,7 @@ public class QuickSort
     *****************************************************/
     public static void qsort( int[] d )
     {
-        qsortHelper2(d, 0, (d.length-1));
+        qsortHelper3(d, 0, (d.length-1));
     }
 
     //you may need a helper method...
@@ -139,7 +139,7 @@ public class QuickSort
     //random pivot
     public static void qsortHelper3(int[] arr, int left, int right) {
         if (left < right) {
-            int pvtPos = partition(arr, left, right, left + ((int)(Math.random() * (right - left))));
+            int pvtPos = partition(arr, left, right, left + ((int)(Math.random() * (right - left+1))));
             qsortHelper3(arr,left,pvtPos-1);
             qsortHelper3(arr, pvtPos+1,right);
         }
@@ -214,15 +214,15 @@ public class QuickSort
         printArr(arrMatey);
 
 
-        int[] arrMatey2 = new int[1000];
+        int[] arrMatey2 = new int[100];
         for( int i = 0; i < arrMatey2.length; i++ )
-        arrMatey2[i] = (int)( 1000 * Math.random() );
+        arrMatey2[i] = (int)( 100 * Math.random() );
 
-        System.out.println("\narrMatey2 init'd to: large array with 1000 elements" );
+        System.out.println("\narrMatey2 init'd to: large array with 1000000 elements" );
         //printArr(arrMatey);
 
-        shuffle(arrMatey);
-        System.out.println("arrMatey1 post-shuffle: large array with 1000 elements" );
+        shuffle(arrMatey2);
+        System.out.println("arrMatey1 post-shuffle: large array with 1000000 elements" );
         //printArr(arrMatey);
 
         long btime=System.nanoTime();
