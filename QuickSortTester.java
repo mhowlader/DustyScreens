@@ -38,21 +38,46 @@ public class QuickSortTester {
     public static void main(String[] args) {
         QuickSort tool=new QuickSort();
 
+        System.out.println("\nProof of QuickSort Working");
+
+        //get-it-up-and-running, static test case:
+        int [] arr1 = {7,1,5,12,3};
+        System.out.println("\narr1 init'd to: " );
+        printArr(arr1);
+
+        tool.qsort( arr1 );
+        System.out.println("arr1 after qsort: " );
+        printArr(arr1);
+
+        //get-it-up-and-running, static test case w/ dupes:
+        int [] arr2 = {7,1,5,12,3,7};
+        System.out.println("\narr2 init'd to: " );
+        printArr(arr2);
+
+        tool.qsort( arr2 );
+        System.out.println("arr2 after qsort: " );
+        printArr(arr2);
+
+
+
+        System.out.println("\n\nTrials for Testing Runtimes:");
+
         int[] arrMatey2 = new int[1000];
         for( int i = 0; i < arrMatey2.length; i++ )
         arrMatey2[i] = (int)( 1000 * Math.random() );
         System.out.println("\narrMatey2 init'd to: an array of size " + arrMatey2.length );
         //printArr(arrMatey);
 
-        shuffle(arrMatey2);
-        System.out.println("arrMatey2 has been shuffled" );
-        //printArr(arrMatey);
+
 
 
         long btime, etime, total, timeDif, atime;
 
         total=0;
         for (int i=1;i<21;i++) {
+
+
+
             shuffle(arrMatey2);
             btime=System.nanoTime();
             tool.qsort(arrMatey2);
