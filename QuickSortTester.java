@@ -62,38 +62,41 @@ public class QuickSortTester {
 
         System.out.println("\n\nTrials for Testing Runtimes:");
 
-        int[] arrMatey2 = new int[1000];
-        for( int i = 0; i < arrMatey2.length; i++ )
-        arrMatey2[i] = (int)( 1000 * Math.random() );
-        System.out.println("\narrMatey2 init'd to: an array of size " + arrMatey2.length );
-        //printArr(arrMatey);
+        for (int g=1;g<11;g++) {
 
 
 
+            int[] arrMatey2 = new int[g*1000];
+            for( int i = 0; i < arrMatey2.length; i++ )
+            arrMatey2[i] = (int)( (g*1000) * Math.random() );
+            System.out.println("\narrMatey2 init'd to: an array of size " + arrMatey2.length );
+            //printArr(arrMatey);
 
-        long btime, etime, total, timeDif, atime;
+            long btime, etime, total, timeDif, atime;
 
-        total=0;
-        for (int i=1;i<21;i++) {
+            total=0;
+            for (int i=1;i<11;i++) {
 
 
 
-            shuffle(arrMatey2);
-            btime=System.nanoTime();
-            tool.qsort(arrMatey2);
-            etime=System.nanoTime();
+                shuffle(arrMatey2);
+                btime=System.nanoTime();
+                tool.qsort(arrMatey2);
+                etime=System.nanoTime();
 
-            timeDif=etime-btime;
+                timeDif=etime-btime;
 
-            total+=timeDif;
+                total+=timeDif;
 
-            System.out.println("Trial " + i + ": " + timeDif);
+                System.out.println("Trial " + i + ": " + timeDif);
+
+            }
+
+            atime=total/10;
+
+            System.out.println("Average Time for Trials, size " + arrMatey2.length + ": " + atime + " nanoseconds");
 
         }
-
-        atime=total/20;
-
-        System.out.println("Average Time for all Trials: " + atime);
 
 
     }
