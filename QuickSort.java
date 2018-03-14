@@ -113,7 +113,7 @@ public class QuickSort
     *****************************************************/
     public static void qsort( int[] d )
     {
-        qsortHelper3(d, 0, (d.length-1));
+        qsortHelper2(d, 0, (d.length-1));
     }
 
     //you may need a helper method...
