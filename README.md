@@ -52,7 +52,8 @@ Data arrangement doesn't affect our code since we don't check whether or not an 
 
 
 ### Analysis
-All of the graphs appeared to be linear, which countered our hypothesis that it would be at least O(nlogn).  It also appeared that the place that the pivot was put did not have a large effect on the runtime.
+All of the graphs appeared to be linear, which countered our hypothesis that it would be at least O(nlogn).  It also appeared that the place that the pivot was put did not have a large effect on the runtime.  
+Maryann's and Ying's tests have spikes at the end, likely due to the fact that we started testing from the larger arrays and going down. The first test typically takes more time and appears as an outlier because of energy consumption of the computer.
 
 
 
