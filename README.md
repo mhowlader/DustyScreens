@@ -7,17 +7,17 @@
 
 
 ##### Example
-This example implements a choosing of the pivot that is completly random
-Starting array: {7,1,5,12,3}
-choose 4th element
-{7,1,5,3,12}
-choose first element
-{1,5,3,7,12}
-choose 2nd element
-{1,3,5,7,12}
-It wont know that it is sorted, choose first
-{1,3,5,7,12}
-Done
+This example implements a choosing of the pivot that is completly random  
+Starting array: {7,1,5,12,3}  
+choose 4th element  
+{7,1,5,3,12}  
+choose first element  
+{1,5,3,7,12}  
+choose 2nd element  
+{1,3,5,7,12}  
+It wont know that it is sorted, choose first  
+{1,3,5,7,12}  
+Done  
 
 It took 4 steps, but each step takes n time, so it will be n^2
 
