@@ -2,8 +2,8 @@
 #### Maryann Foley, Mohtasim Howlader, Ying Xin Jiang
 # QuickSort Results
 
-
-
+#### Prediction
+We believe that the algo will run, in the worst case, in O(n^2) because it will have to traverse the entire list and each step will be O(n).  The best case is expected to be O(nlogn) because, similarly to merge sort, it will split the array in half with the pivot each step.
 
 
 ##### Example
@@ -35,7 +35,7 @@ In the average case, the runtime appear linear. We tested the runtime from array
 ##### Worst Case
 In the worst case, the chosen pivot point will turn out to be on either end of the array, so the subarrays are as maximized as posssible.
 
-#####Hypothesis
+##### Analysis
 Data arrangement doesn't affect our code since we don't check whether or not an array's already sorted. Every array will be sorted by the code regardless. Run time would be affected by the pivot positions. Pivoting from the median would be faster than pivoting from either end of the array. 
 
 ### Test Results
@@ -49,5 +49,10 @@ Data arrangement doesn't affect our code since we don't check whether or not an 
 ![](Pictures/MohtasimRandomPivot.png)
 #### Descending Pivot
 ![](Pictures/MohtasimDescendingPivot.png)
+
+
+### Analysis
+All of the graphs appeared to be linear, which countered our hypothesis that it would be at least O(nlogn).  It also appeared that the place that the pivot was put did not have a large effect on the runtime.
+
 
 
