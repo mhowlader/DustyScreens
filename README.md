@@ -2,9 +2,6 @@
 #### Maryann Foley, Mohtasim Howlader, Ying Xin Jiang
 # QuickSort Results
 
-### QuickSort Notation
-## Big O(n^2)
-
 
 
 
@@ -40,8 +37,8 @@ In the worst case, the chosen pivot point will turn out to be on either end of t
 
 ### Test Results
 #### Median Tests
-![](Pictures/MohtasimMedianPivot.png)
-![](Picutres/MaryannMedianPivot.png)
+![](Pictures/MohtasimMedianPivot.PNG)
+![](Picutres/MaryannMedianPivot.PNG)
 #### Random Tests
 ![](Pictures/MohtasimRandomPivot.png)
 #### Descending Pivot
