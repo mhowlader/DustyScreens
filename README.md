@@ -40,6 +40,8 @@ In the worst case, the chosen pivot point will turn out to be on either end of t
 ![](Pictures/MohtasimMedianPivot.PNG)
 
 ![](Pictures/MaryannMedianPivot.PNG)
+
+![](Pictures/YingMedianPivot.PNG)
 #### Random Tests
 ![](Pictures/MohtasimRandomPivot.png)
 #### Descending Pivot
