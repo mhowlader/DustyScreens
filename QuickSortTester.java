@@ -37,7 +37,7 @@ public class QuickSortTester {
 
     public static void main(String[] args) {
         QuickSort tool=new QuickSort();
-
+/*
         System.out.println("\nProof of QuickSort Working");
 
         //get-it-up-and-running, static test case:
@@ -58,9 +58,9 @@ public class QuickSortTester {
         System.out.println("arr2 after qsort: " );
         printArr(arr2);
 
+*/
 
-
-        System.out.println("\n\nTrials for Testing Runtimes:");
+       // System.out.println("\n\nTrials for Testing Runtimes:");
 
         for (int g=11;g>0;g--) {
 
@@ -69,7 +69,7 @@ public class QuickSortTester {
             int[] arrMatey2 = new int[g*1000];
             for( int i = 0; i < arrMatey2.length; i++ )
             arrMatey2[i] = (int)( (g*1000) * Math.random() );
-            System.out.println("\narrMatey2 init'd to: an array of size " + arrMatey2.length );
+            //System.out.println(arrMatey2.length );
             //printArr(arrMatey);
 
             long btime, etime, total, timeDif, atime;
@@ -88,13 +88,13 @@ public class QuickSortTester {
 
                 total+=timeDif;
 
-                System.out.println("Trial " + i + ": " + timeDif);
+                //System.out.println("Trial " + i + ": " + timeDif);
 
             }
 
             atime=total/10;
-
-            System.out.println("Average Time for Trials, size " + arrMatey2.length + ": " + atime + " nanosecond" );
+            if (arrMatey2.length <= 10000){
+            System.out.println(arrMatey2.length + "," + atime);}
 
         }
 
