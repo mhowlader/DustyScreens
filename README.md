@@ -38,6 +38,7 @@ In the worst case, the chosen pivot point will turn out to be on either end of t
 ### Test Results
 #### Median Tests
 ![](Pictures/MohtasimMedianPivot.PNG)
+Maryann
 ![](Picutres/MaryannMedianPivot.PNG)
 #### Random Tests
 ![](Pictures/MohtasimRandomPivot.png)
