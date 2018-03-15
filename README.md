@@ -43,6 +43,8 @@ Data arrangement doesn't affect our code since we don't check whether or not an 
 ![](Pictures/MohtasimMedianPivot.PNG)
 
 ![](Pictures/MaryannMedianPivot.PNG)
+
+![](Pictures/YingMedianPivot.PNG)
 #### Random Tests
 ![](Pictures/MohtasimRandomPivot.png)
 #### Descending Pivot
