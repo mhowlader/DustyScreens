@@ -5,12 +5,9 @@
 ### QuickSort Notation
 ## Big O(n^2)
 
-### Best case
-In the best case, the chosen pivot point will end up being the median value, so it will split the array in the middle
 
-### Worst case
 
-In the worst case, the chosen pivot point will be on either end of the array, so it will continiously have to incriment the size of the region by one.
+
 
 ##### Example
 This example implements a choosing of the pivot that is completly random
@@ -26,4 +23,28 @@ It wont know that it is sorted, choose first
 Done
 
 It took 4 steps, but each step takes n time, so it will be n^2
+
+##### Timing Mechanism/Methodology
+1. Record System.nanoTime() before quicksort
+2. Record System.nanoTime() after quicksort
+3. Print the difference between the two.
+
+##### Best Case
+In the best case, the chosen pivot point will end up being the median value, so it will split the array in the middle.
+
+##### Average Case
+In the average case, the runtime appear linear. We tested the runtime from arrays of size 1000 to 500000 and graphed it. The results seems almost perfectly linear.
+
+##### Worst Case
+In the worst case, the chosen pivot point will turn out to be on either end of the array, so the subarrays are as maximized as posssible.
+
+### Test Results
+#### Median Tests
+![](Pictures/MohtasimMedianPivot.png)
+![](Picutres/MaryannMedianPivot.png)
+#### Random Tests
+![](Pictures/MohtasimRandomPivot.png)
+#### Descending Pivot
+![](Pictures/MohtasimDescendingPivot.png)
+
 
